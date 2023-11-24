@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.box {
+    padding: 64px;
+    border: 1px solid #eee;
+    background: #888;
+    color: #f2f2f2;
+    border-radius: 1rem;
+    animation: myanima 3s infinite alternate;
+}
+
+@keyframes myanima {
+    0% {
+      transform: scale(1) translateY(0);
+      background-color: #abe;
+    }
+    50% {
+      transform: scale(2);
+
+      background-color: #24A;
+    }
+    100% {
+      transform: scale(3);
+      transform: translateX(-100px) translateY(-100px);
+      background-color: #57D;
+    }
+  }
